@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="titleBox">
+                <h1 class="title">Pomodoro Timer</h1>
+                <hr>
+            </div>
+            <div class="content-timerBox">
+                <div class="timerBox">
+                    <div class="buttonsBox-Top">
+                        <button class="startBtn" id="start-btn">Pomodoro</button>
+                        <button class="breakBtn" id="break-btn">Short Break</button>
+                        <button class="Longbreak" id="Longbreak">Long Break</button>
+                    </div>
+                    <div class="TimeBox">
+                        <div class="clock">
+                            <h2 id="timer-el" class="time">-</h2>
+                        </div>
+                        <h3 id="text"></h2>
+                    </div>
+                    <div class="buttonsBox-Bottom">
+                        <button  id="pause-btn" class="pause-btn"><i class="fa fa-pause"></i></button>
+                        <button  id="resume-btn" class="resume-btn"></button>
+                    </div>
+                    <h3>Time To Focus!</h3>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: white;
+    background-color: crimson;
+}
+
+
+hr {
+    width: 350px;
+}
+
+h1 {
+    padding-top: 1rem;
+    padding-bottom: 1px;
+}
+
+
+.time {
+    font-size: 110px;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.time {
+
+    border:5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 350px;
+}
+
+.timerBox {
+    height: 550px;
+    width: 500px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    border-radius: 2rem;
+    background-color: rgb(194, 27, 61);
+}
+
+.timerBox.pomodoro {
+    background-color: rgb(194, 27, 61);
+
+}
+
+.timerBox.break {
+    border: transparent;
+    background-color: rgb(6, 121, 128);
+}
+
+.timerBox.longbreak {
+    background-color: rgb(38, 107, 156);
+}
+
+
+.buttonsBox-Top button {
+    text-align: center;
+    transition: ease-in 0.3s;        
+    border-radius: 10px;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: transparent;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-color: transparent;
+    color: whitesmoke;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    
+}
+
+
+.buttonsBox-Top button:hover  {
+    transform: translateY(5px);
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.buttonsBox-Top button.active {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+.buttonsBox-Bottom button{
+    height: 40px;
+    width: 60px;
+    font-size: 30px;
+    margin: 1rem;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.6s;
+}
+
+.buttonsBox-Bottom button:hover, button::after{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.buttonsBox-Bottom .resume-btn::before {
+    content: '\25BA';
+}
+
+.content-timerBox {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width: 520px) {
+    hr {
+        width: 400px;
+    }
+    .timerBox {
+        height: 500px;
+        width: 400px;
+
+    }
+
+    .time {
+
+        border:1px solid white;
+        border-radius: 10px;
+        width: 300px;
+        font-size: 90px;
+    }
+}
+
+@media screen and  (max-width: 450px){
+    hr {
+        width: 300px;
+    }
+    .timerBox {
+        height: 500px;
+        width: 300px;
+
+    }
+
+    .time {
+
+        border:1px solid white;
+        border-radius: 10px;
+        width: 200px;
+        font-size: 60px;
+    }
+
+}
+
+
